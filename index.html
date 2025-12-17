@@ -122,7 +122,6 @@
         scroll-snap-type: x mandatory;
        -webkit-overflow-scrolling: touch;
        scrollbar-width: none;
-       touch-action: pan-x;
        width: 100vw;
       }
       .hero {
@@ -147,22 +146,25 @@
     </style>
   </head>
   <body>
-    <div class="slider">
-      <div class="hero"></div>
-      <div class="hero"></div>
-      <div class="hero"></div>
-    </div>
-    
-    <div class="slider">
-      <div class="hero"></div>
-      <div class="hero"></div>
-      <div class="hero"></div>
-      <div class="hero"></div>
-    </div>
-    <div class="slider">
-      <div class="hero"></div>
-      <div class="hero"></div>
-      <div class="hero"></div>
+    <div style="overflow-y: auto;">
+      <div class="slider">
+        <div class="hero"></div>
+        <div class="hero"></div>
+        <div class="hero"></div>
+        <div class="hero"></div>
+        <div class="hero"></div>
+      </div>
+      
+      <div class="slider">
+      </div>
+      <div class="slider">
+        <div class="hero"></div>
+        <div class="hero"></div>
+        <div class="hero"></div>
+        <div class="hero"></div>
+        <div class="hero"></div>
+        <div class="hero"></div>
+      </div>
     </div>
 
         <div
@@ -204,7 +206,7 @@
       const popup = document.querySelectorAll(".positioned-popup")[0]
       const btn = document.querySelectorAll(".linked-btn")
       const link = ["http://shopee.co.id/noliteaspiciens","https://api.whatsapp.com/send?phone=6287788364875",'https://maps.app.goo.gl/11SjGNSXrFoUuNmY7?g_st=com.google.maps.preview.copy']
-      const imgSrc = ["A1","A2","A3","B1","B2","B3","B4","C1","C2","C3"]
+      const imgSrc = ["A1","A2","A3","A4","A5","B1","B2","B3","B4","B5","B6"]
       const heroClass = document.querySelectorAll(".hero")
 
       heroClass.forEach((e, i) => {
