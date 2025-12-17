@@ -6,9 +6,9 @@
     <title>NOLITE ASPICIENS</title>
     <style>
 
-      /* ::-webkit-scrollbar {
+      ::-webkit-scrollbar {
         display: none;
-      } */
+      }
 
       html,
       body {
@@ -133,6 +133,17 @@
         flex: 0 0 100%;
         scroll-snap-align: center;
       }
+
+      @media (min-width: 768px) {
+        .slider {
+        scroll-snap-type: x proximity;
+        }
+
+        .hero {
+          
+        min-height: 140vh;
+        }
+      }
     </style>
   </head>
   <body>
@@ -218,7 +229,6 @@
           window.open(link[i])
         }
       })
-      document.querySelectorAll(".slider")[0].onclick = () => {alert("halo")}
 
     </script>
 
